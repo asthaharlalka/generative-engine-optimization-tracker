@@ -374,7 +374,7 @@ def query_claude(question: str, api_key: str) -> str:
 
 # ── Helper: call Google Gemini ────────────────────────────────────────────────
 def query_gemini(question: str, api_key: str) -> str:
-    for model in ["gemini-2.0-flash", "gemini-1.5-flash"]:
+    for model in ["gemini-2.5-flash"]:
         try:
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
             payload = {
