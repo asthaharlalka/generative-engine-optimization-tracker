@@ -375,7 +375,7 @@ def query_claude(question: str, api_key: str) -> str:
 # ── Helper: call Google Gemini ────────────────────────────────────────────────
 def query_gemini(question: str, api_key: str, max_tokens: int = 800) -> str:
     try:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent?key={api_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
         payload = {
             "contents": [{"parts": [{"text": question}]}],
             "generationConfig": {"maxOutputTokens": max_tokens, "temperature": 0.3}
