@@ -412,7 +412,7 @@ def query_grok(question: str, api_key: str, max_tokens: int = 500) -> str:
             "Content-Type": "application/json"
         }
         payload = {
-            "model": "grok-2",
+            "model": "grok-4-1-fast-reasoning",
             "messages": [{"role": "user", "content": question}],
             "max_tokens": max_tokens,
             "temperature": 0.3
