@@ -28,7 +28,7 @@ The GEO Visibility Tracker fires a set of buyer-intent questions at up to 5 AI e
 
 - **Any category** — type anything: "Running Shoes", "GTM Automation Software", "Specialty Coffee", "Skincare for Oily Skin"
 - **Up to 5 LLMs simultaneously** — ChatGPT, Perplexity, Claude, Gemini, Grok. Run with any combination you have keys for
-- **Smart question generation** — 10 brand-intent questions generated and validated for your category. Questions with brand names, head-to-heads, or no brand intent are automatically rejected
+- **Smart question generation** — 10 brand-intent questions generated and validated for your category. Questions with brand names, head-to-heads, or no brand intent are automatically rejected. Gemini uses JSON output mode for more reliable parsing
 - **Your brand vs competitors** — enter your brand in Step 2 (required). It anchors the entire analysis
 - **Custom questions** — add your own on top of the AI-generated set. Invalid questions are flagged with the specific reason they were rejected
 - **Visibility scorecard** — each brand scored 0–100 based on breadth, frequency, and sentiment
@@ -76,7 +76,7 @@ Every question — AI-generated or custom — must pass all of these:
 - [Perplexity API](https://perplexity.ai) — sonar model
 - [Anthropic API](https://anthropic.com) — Claude 3 Haiku
 - [Google Gemini API](https://aistudio.google.com) — Gemini 2.5 Flash
-- [xAI Grok API](https://console.x.ai) — Grok Beta
+- [xAI Grok API](https://console.x.ai) — Grok 4.1 Fast Reasoning
 - [Plotly](https://plotly.com) — interactive charts
 - [Pandas](https://pandas.pydata.org) — data processing
 
@@ -128,7 +128,7 @@ Keys are entered in the sidebar each session and are never stored or logged.
 
 ## Cost Per Scan
 
-A typical 10-question scan across all 5 LLMs costs approximately $0.02–0.05. The playbook and competitive intelligence sections each make one additional API call (~$0.01 each). GPT-4o-mini and Claude Haiku are most cost-efficient.
+A typical 10-question scan across all 5 LLMs costs approximately $0.02–0.05. The playbook and competitive intelligence sections each make one additional API call (~$0.01 each). GPT-4o-mini and Claude Haiku are most cost-efficient. Note: Grok 4.1 Fast Reasoning is a reasoning model and may cost more per call than standard models.
 
 ---
 
