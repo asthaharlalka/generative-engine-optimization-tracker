@@ -613,10 +613,9 @@ def make_mention_comparison(df: pd.DataFrame, llm_keys: list[str]) -> go.Figure:
 st.markdown("""
 <div class="hero">
     <div class="hero-eyebrow">Generative Engine Optimization</div>
-    <div class="hero-title">AI Search<br><span>Visibility Tracker</span></div>
+    <div class="hero-title">AI Brand<br><span>Visibility Tracker</span></div>
     <div class="hero-sub">
-        Find out which brands AI recommends when your buyers ask category questions —
-        before your competitors do.
+        See which brands AI recommends to your buyers — and whether yours is one of them.
     </div>
     <div>
         <span class="stat-pill">94% of B2B buyers use AI to research vendors</span>
