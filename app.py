@@ -666,6 +666,7 @@ with col1:
     st.markdown('<div class="section-label">Step 1 — Your category (type anything)</div>', unsafe_allow_html=True)
     category = st.text_input(
         "Category",
+        value ="",
         label_visibility="collapsed",
         placeholder="e.g. GTM Automation, Running Shoes, Specialty Coffee..."
     )
@@ -674,6 +675,7 @@ with col2:
     st.markdown('<div class="section-label">Step 2 — Your brand <span style="color:#ef4444">*required</span></div>', unsafe_allow_html=True)
     your_brand = st.text_input(
         "Your brand",
+        value ="",
         label_visibility="collapsed",
         placeholder="The brand you want the analysis for"
     )
@@ -681,6 +683,7 @@ with col2:
 st.markdown('<div class="section-label" style="margin-top:1rem;">Step 3 — Competitor brands (comma-separated)</div>', unsafe_allow_html=True)
 brands_input = st.text_input(
     "Competitor brands",
+    value ="",
     label_visibility="collapsed",
     placeholder="Brand A, Brand B, Brand C..."
 )
